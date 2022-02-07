@@ -1,0 +1,66 @@
+@media (max-width: 1400px) {
+	.main .overlay .box .buttons {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1100px) {
+	.main {
+		height: 1100px;
+	}
+
+	.main .overlay {
+		height: 1100px;
+	}
+}
+
+@media (max-height: 800px) {
+	.main .overlay .copy {
+		display: none;
+	}
+}
+
+@media (max-width: 890px) {
+	.main .overlay .box:after {
+		display: none;
+	}
+
+	.main .overlay .box .buttons a:first-child {
+		display: none;
+	}
+
+	.main .overlay .box .buttons a:last-child {
+		display: none;
+	}
+
+	html {
+		font-size: 7px;
+	}
+
+	.main .overlay .box .buttons {
+		width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.main .overlay .copy {
+		display: none;
+	}
+
+	p {
+		letter-spacing: 2px;
+	}
+
+	h1 {
+		letter-spacing: 4px;
+	}
+
+	h2 {
+		letter-spacing: 5px;
+	}
+
+	h3 {
+		letter-spacing: 3px;
+	}
+}
+

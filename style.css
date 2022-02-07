@@ -1,0 +1,207 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Arial";
+	text-transform: uppercase;
+}
+
+html {
+	font-size: 10px;
+}
+
+h1 {
+	font-size: 2.2rem;
+	letter-spacing: 6px;
+}
+
+h2 {
+	font-weight: 600;
+	margin-top: 80px;
+	font-size: 4.2rem;
+	letter-spacing: 15px;
+}
+
+h3 {
+	margin-top: 30px;
+	font-size: 2rem;
+	letter-spacing: 6px;
+}
+
+h4 {
+	font-size: 2.8rem;
+	letter-spacing: 10px;
+	width: 50%;
+	font-weight: 200;
+	line-height: 7rem;
+	border-bottom: 2px solid white;
+	margin-left: 40px;
+}
+
+p {
+	font-weight: 200;
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+	letter-spacing: 5px;
+	margin-bottom: 80px;
+}
+
+a {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+	letter-spacing: 3px;
+	border: 1px solid white;
+	padding: 22px 40px;
+	transition: .2s;
+}
+
+.main {
+	height: 100vh;
+	width: 100%;
+	background-image: url(img/bg2.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.main .overlay {
+	height: 100vh;
+	background-image: linear-gradient(to top, rgb(19, 21, 25), rgba(19, 21, 25, 0.65));
+	background-size: cover;
+	width: 100%;
+}
+
+.screenoverlay, .screenoverlay2 {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: linear-gradient(to top, rgb(19, 21, 25), rgba(19, 21, 25, 0.65));
+	display: none;
+}
+
+.main .overlay .box {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 80%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: auto 0;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.main .overlay .box:after {
+	content: "";
+	width: 1px;
+	height: 15%;
+	background-color: white;
+	position: absolute;
+}
+
+.main .overlay .box .buttons {
+	padding: 25px 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -30%;
+}
+
+.main .overlay .box .buttons a:first-child {
+	border-right: none;
+	border-radius: 5px 5px 0 0;
+	margin-right: -5px;
+}
+
+.main .overlay .box .buttons a:last-child {
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+	margin-left: -5px;
+}
+
+.main .overlay .box .buttons a:hover {
+	background-color: rgba(255, 255, 255, .07);
+}
+
+.main .overlay .copy {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main .overlay .copy .p_copy {
+	color: #B5B5B5;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}
+
+.main .overlay #screenshots {
+	background-color: rgba(20, 34, 45, 0.72);
+	width: 800px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: none;
+	z-index: 30;
+}
+
+.main .overlay #options {
+	background-color: rgba(20, 34, 45, 0.72);
+	width: 800px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: none;
+}
+
+.main .overlay #options p {
+	margin: 20px 0 20px 40px;
+	text-align: left;
+}
+
+.main .overlay .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color: transparent;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 4rem;
+	border-radius: 50%;
+	color: #B5B5B5;
+	transition: .2s;
+}
+
+.main .overlay .close:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+.main .overlay #screenshots img {
+	margin-bottom: 30px;
+}
+
+.main .overlay #screenshots #oneimg {
+	width: 90%;
+}
+
+.preload {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-color: black;
+	z-index: 30;
+	display: block;
+}
